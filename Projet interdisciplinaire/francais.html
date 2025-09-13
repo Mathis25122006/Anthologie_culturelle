@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Interdisciplinaire</title>
+  
+  <!-- 🔗 Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="projet_interdisciplinaire.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+   
+
+  <h1 class="page-title" id="top">Littérature</h1>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li class="dropdown">
+          <a href="#">Humanités</a>
+          <ul class="dropdown-content">
+            <li class="dropdown">
+              <a href="francais.html">Littérature</a>
+              <ul class="dropdown-subcontent">
+                <li><a href="dedans.html">Ô Dedans</a></li>
+                <li><a href="dehors.html">Ô Dehors</a></li>
+              </ul>
+            </li>
+            <li><a href="histoire_art.html">Histoire de l'art</a></li>
+            <li><a href="anglais.html">Culture contemporaine en Anglais</a></li>
+          </ul>
+        </li>
+        <li><a href="createur.html">Qui sommes-nous ?</a></li>
+        <li class="dropdown">
+          <a href="#">Références</a>
+          <ul class="dropdown-content">
+            <li><a href="https://louislegrand.fr/">Louis Le Grand</a></li>
+            <li><a href="https://psl.eu/formation/cpes-psl-louis-le-grand">Le CPES</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="split-container">
+    <div class="split left" id="dedans" onclick="expandSection('dedans')">
+      <h2>Ô Dedans</h2>
+    </div>
+    <div class="split right" id="dehors" onclick="expandSection('dehors')">
+      <h2>Ô Dehors</h2>
+    </div>
+  
+    <section id="content-dedans" class="content-section hidden">
+      <button class="back-button" onclick="resetSections()">↩ Retour</button>
+      <h2>Contenu "Ô Dedans"</h2>
+      <p>Voici le contenu littéraire associé à la notion de "Dedans".</p>
+    </section>
+  
+    <section id="content-dehors" class="content-section hidden">
+      <button class="back-button" onclick="resetSections()">↩ Retour</button>
+      <h2>Contenu "Ô Dehors"</h2>
+      <p>Voici le contenu littéraire associé à la notion de "Dehors".</p>
+    </section>
+    
+  </main>
+  <script src="projet_interdisciplinaire.js"></script>
+</body>  
