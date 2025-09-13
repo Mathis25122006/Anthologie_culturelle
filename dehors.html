@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Interdisciplinaire</title>
+  <link rel="stylesheet" href="projet_interdisciplinaire.css" />
+  <link rel="stylesheet" href="modal.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <h1 class="page-title" id="top">Littérature</h1>
+
+  <!-- Menu principal -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li class="dropdown">
+          <a href="#">Humanités</a>
+          <ul class="dropdown-content">
+            <li class="dropdown">
+              <a href="francais.html">Littérature</a>
+              <ul class="dropdown-subcontent">
+                <li><a href="dedans.html">Ô Dedans</a></li>
+                <li><a href="dehors.html">Ô Dehors</a></li>
+              </ul>
+            </li>
+            <li><a href="histoire_art.html">Histoire de l'art</a></li>
+            <li><a href="anglais.html">Culture contemporaine en Anglais</a></li>
+          </ul>
+        </li>
+        <li><a href="createur.html">Qui sommes-nous ?</a></li>
+        <li class="dropdown">
+          <a href="#">Références</a>
+          <ul class="dropdown-content">
+            <li><a href="https://louislegrand.fr/">Louis Le Grand</a></li>
+            <li><a href="https://psl.eu/formation/cpes-psl-louis-le-grand">Le CPES</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Corps principal -->
+  <main class="art-container">
+    <!-- Menu latéral -->
+    <aside class="art-sidebar">
+      <ul>
+        <li><a href="#cinema">Cinéma</a>
+          <ul class="submenu">
+            <li><a href="#snow">Snowpiercer</a></li>
+          </ul>
+          <ul class="submenu">
+            <li><a href="#dersou">Dersou Ouzala</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#theatre">Théâtre</a>
+          <ul class="submenu">
+            <li><a href="#racine">Racine carrée du verbe être</a></li>
+          </ul>
+          <ul class="submenu">
+            <li><a href="#noces">Journée de Noces chez les Cromagnons</a></li>
+          </ul>
+          <ul class="submenu">
+            <li><a href="#romancero">Romancero Queer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <section class="art-content">
+      <p class="intro-text">
+        Vous trouverez ici un ensemble de ressources autour des sorties culturelles réalisées dans le cadre du cours de littérature de L1. Les séances de cinéma et les pièces de théâtre ont jalonné notre année, enrichissant notre culture et nourrissant les discussions menées en classe, certaines œuvres ayant été intégrées à nos séquences d’analyse.
+Pour chaque sortie, vous pouvez découvrir une brève présentation des artistes ainsi que le contexte de création de l’œuvre en cliquant sur les photos. 
+      </p>
+
+      <section id="cinema">
+        <h2>Cinéma</h2>
+        <article id="snow">
+          <h3>Snowpiercer</h3>
+          <div class="text-image-row">
+            <div class="text-column">
+              <p>
+                Snowpiercer (2013) de Bong Joon-ho est un film de science-fiction dystopique qui se déroule dans un futur glacé, où la Terre est devenue inhabitable à cause d’une tentative ratée de lutter contre le réchauffement climatique. Les derniers survivants de l’humanité vivent à bord d’un train en mouvement perpétuel, le Snowpiercer, qui fait le tour du globe sans jamais s’arrêter.
+              </p>
+              <p>
+                Mais ce train est une société en miniature, organisée selon une hiérarchie brutale : à l’arrière, la misère, la saleté, l’oppression ; à l’avant, le luxe, la nourriture abondante, la technologie. Un jour, un homme du “fond du train”, Curtis, mène une révolte pour briser ce système. Avec d’autres passagers, il progresse de wagon en wagon, confronté à une violence de plus en plus raffinée, jusqu’à ce qu’il découvre la vérité sur le fonctionnement du train. Le film dépasse le cadre du simple récit de révolte : Bong Joon-ho y construit une allégorie puissante sur les classes sociales, le pouvoir, le consentement à l’ordre établi, et la violence nécessaire (ou non) pour le renverser. Visuellement marquant, rythmé, souvent absurde ou cruel, Snowpiercer pousse à réfléchir sur le prix à payer pour une révolution — et sur la possibilité, peut-être, de sortir définitivement du train.
+              </p>
+            </div>
+            <div class="image-column">
+              <figure class="image-wrapper"
+                data-title="Bong Joon Ho"
+                data-author="Réalisateur"
+                data-description="
+                Bong Joon-ho est un réalisateur et scénariste sud-coréen né en 1969, connu pour ses films engagés, souvent hybrides, mêlant thriller, science-fiction, satire sociale et humour noir. Il s’est fait connaître avec Memories of Murder et The Host, mais c’est avec Snowpiercer et surtout Parasite (Palme d’or 2019, Oscar du meilleur film) qu’il a acquis une renommée mondiale. Son cinéma interroge les inégalités sociales, les violences systémiques et les absurdités du monde contemporain, toujours avec une mise en scène brillante et un regard à la fois critique et profondément humain."
+
+              >
+                <img src="Bong_Joon_Ho.jpg" alt="Wajdi Mouawad" onclick="openModal(this.parentElement)" />
+                <figcaption>Bong Joon Ho</figcaption>
+              </figure>
+              <div class="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/dTYz-jXdhJs" 
+                  title="Vidéo YouTube" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+        </article>
+        <article id="dersou">
+          <h3>Dersou Ouzala</h3>
+          <div class="text-image-row">
+            <div class="text-column">
+              <p>
+                Dersou Ouzala (1975) est un film d’Akira Kurosawa, inspiré des mémoires de l’explorateur russe Vladimir Arseniev. Le récit suit la rencontre entre un officier cartographe de l’armée russe et un chasseur nomade, Dersou, au cœur des vastes forêts sibériennes. Au fil des expéditions, une amitié profonde naît entre les deux hommes, fondée sur le respect mutuel et une vision du monde radicalement différente. Le film explore la relation entre l’homme et la nature, la survie, l’effacement progressif des savoirs traditionnels, et la difficulté à faire cohabiter deux civilisations.
+              </p>
+              <p>
+                Au cours de la pièce, chaque protagoniste prend conscience que, sous l’apparente normalité de l’institution du mariage, se cachent des comportements, des conflits, des besoins ou des peurs hérités de nos ancêtres — d’une époque lointaine, lorsque se formaient les premiers groupes humains.
+              </p>
+              <p>
+                Le film souligne aussi la fragilité de ce mode de vie : la modernité le rejette, la ville l’éloigne, et Dersou se retrouve désemparé, comme un symbole d’un savoir qui disparaît. Le froid, omniprésent, est une épreuve mais aussi une réalité brute qui rappelle cette nécessité d’harmonie.
+                Finalement, Kurosawa propose une méditation sur ce que l’homme perd quand il rompt ce lien vital avec la nature : une forme d’humanité elle-même menacée par la société moderne.
+                
+                
+              </p>
+            </div>
+            <div class="image-column">
+              <figure class="image-wrapper"
+                data-title="Akira Kurosawa"
+                data-author="Réalisateur"
+                data-description="
+                Akira Kurosawa, grand maître du cinéma japonais, est connu pour ses films puissants, souvent marqués par des dilemmes moraux, un sens aigu du cadre, et une réflexion sur le pouvoir, le temps et la nature humaine. Avec Dersou Ouzala, tourné en URSS, il signe une œuvre lente, contemplative, et profondément humaniste — une méditation sur ce que nous faisons du monde et sur ce que nous perdons en le transformant.
+"
+
+              >
+                <img src="kurosawa.jpg" alt="Wajdi Mouawad" onclick="openModal(this.parentElement)" />
+                <figcaption>Akira Kurosawa</figcaption>
+              </figure>
+              <div class="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/C-hbpbj2lD8" 
+                  title="Le film" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </article>
+      <section id="theatre">
+        <h2>Théâtre</h2>
+
+        <article id="racine">
+          <h3>Racine carrée du verbe être</h3>
+          <div class="text-image-row">
+            <div class="text-column">
+              <p>
+                Créée en 2022, Racine carrée du verbe être est une pièce de Wajdi Mouawad qui s’inscrit dans la continuité de son cycle Domestique (Seuls, Sœurs, Frères, Mère). Elle met en scène plusieurs figures d’une même famille, traversant les âges et les continents, autour d’une lignée marquée par les guerres, les exils et les silences.
+              </p>
+              <p>
+                La pièce tisse les trajectoires de personnages issus de différentes générations : des enfants, des parents, des grands-parents. Elle confronte les blessures héritées (traumatismes de guerre, déracinement, secrets familiaux) aux tentatives de reconstruction et de transmission. On y suit notamment un fils qui cherche à comprendre le passé de sa mère, une femme hantée par ce qu’elle a dû fuir, et des proches qui portent les traces de ce passé dans leurs vies présentes.
+              </p>
+              <p>
+                La narration mêle dialogue, adresse directe au public, fragments oniriques et moments choraux. Mouawad y interroge concrètement les conséquences des héritages familiaux et historiques sur les individus : comment ce qui a été tût ou transmis façonne les existences. La mise en scène joue sur les ruptures de temps et d’espace, faisant coexister plusieurs époques et lieux dans une même continuité dramatique.
+              </p>
+            </div>
+            <div class="image-column">
+              <figure class="image-wrapper"
+                data-title="Wajdi Mouawad"
+                data-author="Auteur, metteur en scène et comédien"
+                data-description="
+                  Né au Liban en 1968, Wajdi Mouawad a fui la guerre civile pendant son enfance et a vécu en France, puis au Québec jusqu’aux années 2000. Auteur, metteur en scène, comédien et directeur de La Colline depuis 2016, il signe des adaptations de pièces classiques et contemporaines, porte ses propres textes à la scène — publiés par Leméac/Actes-Sud — et écrit également des romans, dont Visage retrouvé (2002) et Anima (2012), salué par de nombreux prix et traduit en vingt langues.
+                  Distingué par l’Ordre des Arts et des Lettres de France, l’Ordre du Canada ou l’Ordre national du Québec, Wajdi Mouawad a travaillé sous la direction de metteurs en scène internationaux et créé des spectacles marquants, de Littoral(1997) jusqu’aux tragédies de Sophocle, ou Tous des Oiseaux (2017), Notre innocence (2018), Fauves (2019) et Racine carrée du verbe être (2022). Son théâtre, poétique et politique, sonde la mémoire, l’identité, l’amour, le deuil, l’exil et la transmission, en mêlant l’intime et l’universel. Il s’empare des conflits familiaux, des guerres, des migrations et des secrets liés à l’histoire, afin d’interroger la condition humaine, la place de l’individu dans le monde, et la création de soi-même."
+              >
+                <img src="wadji.jpg" alt="Wajdi Mouawad" onclick="openModal(this.parentElement)" />
+                <figcaption>Wajdi Mouawad</figcaption>
+              </figure>
+              <div class="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/5ybMedaeDXM" 
+                  title="Vidéo YouTube" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+        </article>
+        <article id="noces">
+          <h3>Journée de noces chez les Cromagnons</h3>
+          <div class="text-image-row">
+            <div class="text-column">
+              <p>
+                Journée de noces chez les Cromagnons, de Wajdi Mouawad, se déroule pendant un mariage, un moment de fête où toutes les générations d’une famille se retrouvent. Cette réunion va faire remonter des conflits, des non-dits et des tensions anciennes, liés tant aux relations de couple qu’aux relations familiales.
+              </p>
+              <p>
+                Au cours de la pièce, chaque protagoniste prend conscience que, sous l’apparente normalité de l’institution du mariage, se cachent des comportements, des conflits, des besoins ou des peurs hérités de nos ancêtres — d’une époque lointaine, lorsque se formaient les premiers groupes humains.
+              </p>
+              <p>
+               Ainsi, le mariage prend la forme d’une expérience de famille sous tension, renforcée par le choc des points de vue et des souvenirs, tandis que l’on se demande jusqu’à quel point l’amour, l’engagement et le vivre-ensemble échappent ou non à nos instincts fondamentaux.
+              </p>
+            </div>
+            <div class="image-column">
+              <figure>
+                <img src="noces.jpg" alt="Affiche de la pièce"/>
+                <figcaption>Journée de noces chez les Cromagnons</figcaption>
+              </figure>
+              <div class="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/iDm4Ksa-Fik" 
+                  title="Vidéo YouTube" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+                
+              </div>
+              <div class="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/jjHs9i__d9E" 
+                  title="Vidéo YouTube" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+                </iframe>
+                
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article id="romancero">
+          <h3>Romancero Queer</h3>
+          <div class="text-image-row">
+            <div class="text-column">
+              <p>
+                Romancero Queer de Virginie Despentes se déroule dans les coulisses d’une salle de répétition de théâtre. L’intrigue met en scène un metteur en scène charismatique et vieillissant, entouré de comédien·nes queer venu·es participer à un projet artistique ambitieux et engagé. La pièce ne suit pas une narration classique, mais s’organise comme une succession de prises de parole, de confrontations et de confidences dans ce huis clos théâtral.
+Les répétitions deviennent un prétexte pour explorer les vécus intimes et politiques des personnages : leurs identités de genre, leurs sexualités, leurs combats contre les discriminations, mais aussi leurs vulnérabilités et leurs désirs. Ce cadre théâtral permet de brouiller les frontières entre jeu et réalité, fiction et autobiographie, créant une mise en abyme du théâtre lui-même.
+Au fil de la pièce, le metteur en scène est peu à peu mis en question : sa posture d'autorité, son regard cis et hétéro sur les corps et les histoires queer. La dynamique du groupe évolue, révélant les tensions entre générations, entre formes de militantisme, et entre besoin de reconnaissance et besoin de révolte.
+              </p>
+             
+            </div>
+            <div class="image-column">
+              <figure class="image-wrapper"
+                data-title="Virginie Despentes"
+                data-author="Écrivaine, réalisatrice et essayiste française"
+                data-description="Virginie Despentes est une écrivaine, réalisatrice et essayiste française née en 1969. Connue pour son style percutant et engagé, elle explore dans ses œuvres des thèmes comme le genre, la sexualité, la violence, la marginalité et les rapports de pouvoir. Révélée par son roman Baise-moi (1993), adapté ensuite en film, elle s’impose avec Vernon Subutex comme l’une des grandes voix contemporaines. Ouverte sur les luttes féministes, queer et sociales, Despentes défend une littérature libre, radicale, et profondément politique."
+              >
+                <img src="Virginie_Despentes.jpg" alt="Virginie Despentes" onclick="openModal(this.parentElement)" />
+                <figcaption>Virginie Despentes</figcaption>
+              </figure>
+              <img src="romancero.jpg" alt="Virginie Despentes" />
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <div class="modal-text">
+        <h2 id="modal-title"></h2>
+        <p id="modal-author" class="modal-author"></p>
+        <p id="modal-description" class="modal-description"></p>
+      </div>
+      <div class="modal-image">
+        <img src="" alt="" id="modal-img" />
+      </div>
+    </div>
+  </div>
+  
+  <script src="projet_interdisciplinaire.js"></script>
+</body>
+</html>
